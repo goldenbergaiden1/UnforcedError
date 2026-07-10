@@ -1,1 +1,93 @@
 .github/workflows/daily-docket.yml
+name: Daily Docket
+
+# Runs on GitHub's servers every morning at 6:00 AM Eastern.
+# Your laptop can be closed. Your laptop can be at the bottom of a lake.
+#
+# No API key. No language model. scout.py reads government APIs, screens for
+# substance, copies quotes verbatim, and verifies each one by exact string match
+# before it is allowed near the site. Then audit.py re-checks every page.
+#
+# If anything fails, nothing publishes and you get an email from GitHub.
+
+on:
+  schedule:
+    - cron: "0 11 * * 1-5"   # 06:00 America/New_York (EDT). Weekdays only —
+                             # agencies don't file on weekends.
+  workflow_dispatch:          # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-docket
+  cancel-in-progress: false
+
+jobs:
+  docket:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Self-test the scout before trusting it
+        run: |
+          python3 test_scout.py
+          python3 test_audit.py
+
+      - name: Scout — poll primary sources, screen, double-verify quotes
+        run: python3 scout.py 3
+
+      - name: Rebuild the docket and the front page
+        run: |
+          python3 docket.py
+          python3 press.py
+          python3 build_index.py
+
+      - name: The gate — re-verify every fact and scan for opinion language
+        run: python3 audit.py
+
+      - name: Confirm no generated page drifted from its source data
+        run: |
+          if ! git diff --quiet -- site/checks/; then
+            echo "::error::The checks page does not match what press.py generates"
+            echo "::error::from the claims ledger. Someone hand-edited a receipt."
+            git diff -- site/checks/
+            exit 1
+          fi
+
+      - name: Publish
+        run: |
+          if git diff --quiet -- data/ site/; then
+            echo "No new filings cleared the screen today. Nothing to publish."
+            echo "This is a normal outcome, not a failure."
+            exit 0
+          fi
+          git config user.name  "unforced-error-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add data/ site/
+          git commit -m "docket: $(date -u +%Y-%m-%d)"
+          git push
+
+      # Netlify sees the push and redeploys automatically.
+      # Its build command runs audit.py again, independently. Two gates, one script.
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "### Daily Docket — $(date -u +%Y-%m-%d)" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          python3 -c "
+          import json
+          d = json.load(open('data/docket.json'))
+          print(f\"live entries   {len(d['entries'])}\")
+          print(f\"screened out   {len(d['screened_out'])}\")
+          print(f\"archived       {len(d.get('archive', []))}\")
+          if d['entries']:
+              e = d['entries'][0]
+              print(f\"newest         {e['agency']} — {e['title'][:60]}\")
+          " >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
