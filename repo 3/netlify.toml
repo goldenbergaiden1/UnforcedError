@@ -1,0 +1,27 @@
+# The audit IS the build.
+#
+# `audit.py` re-hashes the corpus, re-binds every published span from scratch,
+# re-computes every arithmetic claim, scans the rendered prose for undeclared
+# Type C language, and confirms no killed claim is cited as support.
+#
+# It exits non-zero on any failure. Netlify treats a non-zero build command as a
+# failed build and DOES NOT PUBLISH. The gate is enforced by the host, not by
+# anyone remembering to run it.
+
+[build]
+  command = "python3 press.py && python3 audit.py"
+  publish = "site"
+
+[build.environment]
+  PYTHON_VERSION = "3.11"
+
+# press.py regenerates receipts/UE-2026-001.html from the claims ledger before
+# audit.py checks it. This means a hand-edited receipts page is silently
+# overwritten by the ledger on every deploy -- which is the correct behavior.
+# The receipts page is not a document. It is a rendering of the ledger.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

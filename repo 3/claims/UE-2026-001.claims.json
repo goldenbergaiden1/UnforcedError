@@ -1,0 +1,248 @@
+{
+  "brief_id": "UE-2026-001",
+  "working_title": "Illuminate Education, FTC Docket C-4833",
+  "analyst_stage_completed_utc": "2026-07-10T00:40:00Z",
+  "note": "ANALYST emits claims. Prose is rendered from PASSED claims at the EDITOR stage. No prose exists yet. Claims proposing a quote do not carry offsets; the VERIFIER binds offsets by locating the quote in the snapshot. A quote the verifier cannot locate is a fabricated citation and the claim dies.",
+  "claims": [
+    {
+      "claim_id": "c01",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate stored student data unencrypted.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate stored student data unencrypted."
+    },
+    {
+      "claim_id": "c02",
+      "type": "A",
+      "text": "The FTC alleged that the threat actor first gained access to Illuminate's network on December 27, 2021.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "the threat actor first gained access to Illuminate's network on December 27, 2021"
+    },
+    {
+      "claim_id": "c03",
+      "type": "A",
+      "text": "The FTC alleged that the threat actor remained undetected until January 8, 2022, when Illuminate discovered and terminated the access.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "remained undetected in Illuminate's network until January 8, 2022, when Illuminate discovered and terminated their access"
+    },
+    {
+      "claim_id": "c04",
+      "type": "B",
+      "text": "The intrusion lasted 13 days.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "With unfettered access to Illuminate's IO account for 13 days",
+      "arithmetic": {
+        "operation": "date_difference_days",
+        "operand_a": {"value": "2021-12-27", "bound_by": "c02"},
+        "operand_b": {"value": "2022-01-08", "bound_by": "c03"},
+        "asserted_value": 13
+      }
+    },
+    {
+      "claim_id": "c05",
+      "type": "B",
+      "text": "Illuminate was first warned of security vulnerabilities in its network 23 months before the intrusion began.",
+      "doc_id": "ftc-2223105-complaint",
+      "arithmetic": {
+        "operation": "date_difference_months",
+        "operand_a": {"value": "2020-01", "bound_by": "c06"},
+        "operand_b": {"value": "2021-12-27", "bound_by": "c02"},
+        "asserted_value": null
+      }
+    },
+    {
+      "claim_id": "c06",
+      "type": "A",
+      "text": "The FTC alleged that a third-party vendor's January 2020 assessment identified several major security vulnerabilities and assigned Illuminate an overall 'C' security grade.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "The vendor's January 2020 assessment of Illuminate's network identified several major security vulnerabilities, provided recommended remediations, and assigned Illuminate an overall \"C\" security grade"
+    },
+    {
+      "claim_id": "c07",
+      "type": "A",
+      "text": "The FTC alleged that as of the vendor's February 2021 assessment, more than a year later, Illuminate still had not addressed its weak IAM practices and use of weak credentials.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "more than a year after the January 2020 assessment, Illuminate still had not addressed its weak IAM practices and use of weak credentials"
+    },
+    {
+      "claim_id": "c08",
+      "type": "A",
+      "text": "The FTC alleged that the credentials used to breach the IO account belonged to a former employee with IAM administrator privileges who departed Illuminate in April 2018, over three and a half years before the breach.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "belonged to a former employee, an IAM user with administrator privileges, who had departed Illuminate in April 2018, over three and a half years before the breach"
+    },
+    {
+      "claim_id": "c09",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate did not disable or rotate the departed employee's key pair upon their departure or at any time in the three and a half years before the breach.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate did not disable nor rotate this former employee's key pair upon their departure, or anytime during the three and a half years prior to the breach"
+    },
+    {
+      "claim_id": "c10",
+      "type": "A",
+      "text": "The FTC alleged the breach compromised the personal information of more than 10.1 million students.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "compromising the personal information of more than 10.1 million students"
+    },
+    {
+      "claim_id": "c11",
+      "type": "C",
+      "text": "Illuminate's breach was self-inflicted.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": null
+    },
+    {
+      "claim_id": "c12",
+      "type": "C",
+      "text": "Illuminate's security posture was negligent and its failures were egregious.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": null
+    },
+    {
+      "claim_id": "c13",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate's internal breach notification procedure required notification to affected parties no later than 72 hours from the determination of a breach.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "required notification to affected parties no later than 72 hours from the determination of a breach"
+    },
+    {
+      "claim_id": "c14",
+      "type": "A",
+      "text": "The FTC alleged that in contracts with New York and Connecticut school districts, Illuminate promised breach notification as early as 24 or 48 hours respectively from knowledge or discovery of a potential breach.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate promised to provide notifications of any breach or unauthorized release of student data as early as 24 or 48 hours, respectively, from the knowledge or discovery of a potential breach"
+    },
+    {
+      "claim_id": "c15",
+      "type": "A",
+      "text": "The FTC alleged that in October 2023, nearly two years after the breach, approximately 387,000 current and former students were newly identified as affected.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "in October 2023, nearly 387,000 current and former students were newly identified as being affected by Illuminate's December 2021 - January 2022 data breach"
+    },
+    {
+      "claim_id": "c16",
+      "type": "B",
+      "text": "The gap between Illuminate's confirmation of the breach and its latest notifications was approximately 21 months, against an internal policy of 72 hours.",
+      "doc_id": "ftc-2223105-complaint",
+      "arithmetic": {
+        "operation": "date_difference_months",
+        "operand_a": {"value": "2022-01-08", "bound_by": "c17"},
+        "operand_b": {"value": "2023-10", "bound_by": "c15"},
+        "asserted_value": null
+      }
+    },
+    {
+      "claim_id": "c17",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate and its third-party vendor confirmed the data breach on January 8, 2022.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate and its third-party vendor confirmed the data breach on January 8, 2022"
+    },
+    {
+      "claim_id": "c18",
+      "type": "A",
+      "text": "Illuminate paid a ransom to the threat actor.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate eventually agreed to pay an undisclosed amount in exchange for the receipt of the stolen data"
+    },
+    {
+      "claim_id": "c19",
+      "type": "A",
+      "text": "Illuminate never encrypted student personal information at any point in the relevant period.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "stored, until at least January 2022, students' personal information on Illuminate's network in S3 buckets in plaintext, rather than encrypting the information"
+    },
+    {
+      "claim_id": "c20",
+      "type": "A",
+      "text": "In the Consent Agreement, Illuminate neither admitted nor denied the allegations in the draft Complaint.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "statements by Respondent that it neither admits nor denies any of the allegations in the draft Complaint"
+    },
+    {
+      "claim_id": "c21",
+      "type": "A",
+      "text": "The final order requires multi-factor authentication for all employees and contractors accessing assets storing Covered Information, and that authentication may not use telephone or SMS-based methods and must be resistant to phishing attacks.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "may not include telephone or SMS-based authentication methods and must be resistant to phishing attacks"
+    },
+    {
+      "claim_id": "c22",
+      "type": "A",
+      "text": "The final order requires Illuminate to terminate an authorized user's access within 30 days following a change in their need to know, including because of termination of employment.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "terminate access within 30 days following a change in Authorized Users' need to know (including because of the termination of employment or contract)"
+    },
+    {
+      "claim_id": "c23",
+      "type": "A",
+      "text": "The final order requires encryption of databases in Covered Products both in transit over external networks and at rest.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "Protecting by encryption, at a minimum, databases in Covered Products designed to store all Covered Information held or transmitted by Respondent both in transit over external networks and at rest"
+    },
+    {
+      "claim_id": "c24",
+      "type": "A",
+      "text": "The final order requires vulnerability scanning of networks containing Covered Information once every four months and annual penetration testing.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "vulnerability scanning of Respondent's network(s) containing Covered Information once every four months"
+    },
+    {
+      "claim_id": "c25",
+      "type": "A",
+      "text": "The order was issued June 5, 2026 and terminates 10 years from the date of its issuance.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "This Order will terminate 10 years from the date of its issuance"
+    },
+    {
+      "claim_id": "c26",
+      "type": "D",
+      "text": "This is the 31st FTC data-security enforcement action alleging failure to deprovision former-employee credentials since 2013.",
+      "doc_id": null,
+      "query": "SELECT count(*) FROM ftc_enforcement WHERE allegation_class='credential_deprovisioning' AND year >= 2013"
+    },
+    {
+      "claim_id": "c27",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate failed to employ effective vulnerability monitoring and patch management practices.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "failed to employ effective vulnerability monitoring and patch management practices"
+    },
+    {
+      "claim_id": "c28",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate's own post-breach analyses acknowledged that the compromised credentials were approximately 10 years old.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "the employee's credentials were approximately 10 years old"
+    },
+    {
+      "claim_id": "c29",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate could have prevented or mitigated the failures through readily available and relatively low-cost measures.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "Illuminate could have prevented or mitigated these information security failures through readily available, and relatively low-cost, measures"
+    },
+    {
+      "claim_id": "c30",
+      "type": "A",
+      "text": "The FTC alleged that Illuminate's January 2020 vendor assessment specifically identified weak IAM practices, outdated software, use of weak credentials, and insecure system configurations.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "The January 2020 assessment identified major security vulnerabilities including Illuminate's weak IAM practices, outdated software, use of weak credentials, and insecure system configurations."
+    },
+    {
+      "claim_id": "c31",
+      "type": "A",
+      "text": "The FTC alleged the threat actor exfiltrated 787 SQL server backups.",
+      "doc_id": "ftc-2223105-complaint",
+      "quote": "exfiltrating 787 SQL server backups"
+    },
+    {
+      "claim_id": "c32",
+      "type": "A",
+      "text": "Each violation of the final order may result in a civil penalty of up to $51,744.",
+      "doc_id": "ftc-2223105-final-order",
+      "quote": "Each violation of such an order may result in a civil penalty of up to $51,744"
+    }
+  ]
+}

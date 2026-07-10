@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The FTC just closed a case over a login that stayed active for three and a half years | Unforced Error</title>
+<meta name="description" content="The FTC's order against Illuminate Education became final on June 5, 2026. The timeline, what the order requires, and every fact checked against the original filing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/ue.css">
+</head>
+<body>
+
+<div class="dateline">
+  <span>Vol. I — No. 001</span>
+  <span class="mid">Report 001 · Enforcement</span>
+  <span>27 facts published · 7 cut</span>
+</div>
+
+<header class="masthead small">
+  <a class="nameplate" href="../index.html"><span class="g" data-t="Unforced Error">Unforced Error</span></a>
+</header>
+
+<nav class="paper" aria-label="Sections">
+  <a href="../index.html#reports">Reports</a>
+  <a href="../docket.html">The Docket</a>
+  <a href="../about.html">The Editor</a>
+  <a href="../house-rules.html">House Rules</a>
+  <a href="../index.html#subscribe">Subscribe</a>
+</nav>
+
+<article class="col">
+  <div class="rmeta">
+    <span class="tag">Enforcement</span>
+    <span>July 9, 2026</span>
+    <span>6 min read</span>
+    <span>FTC Docket C-4833</span>
+  </div>
+
+  <h1>The FTC just closed a case over a login that stayed active for three and a half years</h1>
+
+  <p class="stand">A security vendor warned Illuminate Education about weak passwords in January 2020. Someone broke in twenty-three months later using an account belonging to an employee who had quit in 2018. The FTC's order became final on June 5.</p>
+
+  <div class="abyline">
+    <span>By <a href="../about.html">Aiden Goldenberg</a> · Editor</span>
+    <span><a class="cred" href="../checks/illuminate-ftc-order.html"><b>27 facts</b> · <i>7 cut</i> · sources verified</a></span>
+  </div>
+
+  <div class="tldr">
+    <div class="t">The short version</div>
+    <ul>
+      <li>Illuminate Education sells software to schools. The FTC accused it of failing to protect student data.<a class="cref" href="../checks/illuminate-ftc-order.html#c27">1</a></li>
+      <li>A hired security firm graded the company's network a <b>"C"</b> in January 2020 and listed the problems.<a class="cref" href="../checks/illuminate-ftc-order.html#c06">2</a> A year later, the same firm found the same problems unfixed.<a class="cref" href="../checks/illuminate-ftc-order.html#c07">3</a></li>
+      <li>In December 2021 someone logged in using an old administrator account. Its owner had left the company in <b>April 2018</b>. Nobody ever turned it off.<a class="cref" href="../checks/illuminate-ftc-order.html#c08">4</a><a class="cref" href="../checks/illuminate-ftc-order.html#c09">5</a></li>
+      <li>They had access for twelve days and took data on <b>more than 10.1 million students</b>, stored without encryption.<a class="cref" href="../checks/illuminate-ftc-order.html#c10">6</a><a class="cref" href="../checks/illuminate-ftc-order.html#c01">7</a></li>
+      <li>Illuminate settled. It did not admit or deny any of it.<a class="cref" href="../checks/illuminate-ftc-order.html#c20">8</a> The order binds the company for <b>ten years</b>.<a class="cref" href="../checks/illuminate-ftc-order.html#c25">9</a></li>
+    </ul>
+  </div>
+
+  <h2>What happened</h2>
+
+  <p>Illuminate Education makes cloud software that schools use to track attendance, grades, test scores, and learning disabilities. The FTC accused it of failing to protect that data. On June 5, 2026, the Commission issued its final order in the case.<a class="cref" href="../checks/illuminate-ftc-order.html#c33">10</a></p>
+
+  <p class="note"><b>An important caveat, up front.</b> Everything in this section comes from the FTC's complaint, which is a list of accusations, not proven facts. Illuminate settled without admitting or denying any of them.<a class="cref" href="../checks/illuminate-ftc-order.html#c20">8</a> We say "the FTC accused" throughout because that is precisely what the record supports.</p>
+
+  <p>According to the complaint, Illuminate paid an outside security firm to assess its network. That firm's January 2020 assessment found several major problems, recommended fixes, and gave the company an overall "C" grade.<a class="cref" href="../checks/illuminate-ftc-order.html#c06">2</a> The problems it named were specific: weak account management, outdated software, weak passwords, and badly configured systems.<a class="cref" href="../checks/illuminate-ftc-order.html#c30">11</a></p>
+
+  <p>The same firm came back in February 2021. More than a year on, the account management and weak password problems still hadn't been fixed.<a class="cref" href="../checks/illuminate-ftc-order.html#c07">3</a></p>
+
+  <p>On December 27, 2021, someone got into Illuminate's cloud systems.<a class="cref" href="../checks/illuminate-ftc-order.html#c02">12</a> The credentials that worked belonged to a former employee with administrator access who had left the company in April 2018 — more than three and a half years earlier.<a class="cref" href="../checks/illuminate-ftc-order.html#c08">4</a> Illuminate never turned that account off, and never changed its keys, at any point in those three and a half years.<a class="cref" href="../checks/illuminate-ftc-order.html#c09">5</a> The company's own review afterward found the credentials were roughly <b>ten years old</b>.<a class="cref" href="../checks/illuminate-ftc-order.html#c28">13</a></p>
+
+  <p>Nobody noticed until January 8, 2022, when several Illuminate websites went down and staff went looking.<a class="cref" href="../checks/illuminate-ftc-order.html#c03">14</a> By then the intruder had copied 787 database backups<a class="cref" href="../checks/illuminate-ftc-order.html#c31">15</a> containing personal information on more than 10.1 million students.<a class="cref" href="../checks/illuminate-ftc-order.html#c10">6</a> That data was stored unencrypted.<a class="cref" href="../checks/illuminate-ftc-order.html#c01">7</a></p>
+
+  <div class="timeline">
+    <div class="h">Timeline</div>
+    <div class="trow"><span class="d">April 2018</span><span class="w">An administrator with cloud access leaves the company. Their login stays active.<a class="cref" href="../checks/illuminate-ftc-order.html#c08">4</a></span></div>
+    <div class="trow"><span class="d">January 2020</span><span class="w">Hired security firm grades the network a "C" and lists weak passwords and account problems.<a class="cref" href="../checks/illuminate-ftc-order.html#c06">2</a></span></div>
+    <div class="trow"><span class="d">February 2021</span><span class="w">Same firm returns. Same problems, still unfixed.<a class="cref" href="../checks/illuminate-ftc-order.html#c07">3</a></span></div>
+    <div class="trow gap"><span class="d">23 months</span><span class="w">Time between the first warning and the break-in</span></div>
+    <div class="trow"><span class="d">Dec 27, 2021</span><span class="w">Someone logs in with the departed employee's credentials.<a class="cref" href="../checks/illuminate-ftc-order.html#c02">12</a></span></div>
+    <div class="trow"><span class="d">Jan 8, 2022</span><span class="w">Websites go down. Staff investigate and cut off the access.<a class="cref" href="../checks/illuminate-ftc-order.html#c03">14</a></span></div>
+    <div class="trow gap"><span class="d">12 days</span><span class="w">How long the intruder had access</span></div>
+    <div class="trow"><span class="d">Oct 2023</span><span class="w">Nearly 387,000 more students identified as affected, and notified.<a class="cref" href="../checks/illuminate-ftc-order.html#c15">16</a></span></div>
+    <div class="trow gap"><span class="d">21 months</span><span class="w">From confirming the breach to the last notifications. Company policy said 72 hours.<a class="cref" href="../checks/illuminate-ftc-order.html#c13">17</a></span></div>
+    <div class="trow"><span class="d">June 5, 2026</span><span class="w">The FTC's order becomes final.<a class="cref" href="../checks/illuminate-ftc-order.html#c33">10</a></span></div>
+  </div>
+
+  <div class="callout">
+    <div class="t">A note on our own math</div>
+    <p>The FTC's complaint says the intruder had access <code>for 13 days</code>. But the same complaint gives both dates — December 27 and January 8 — and the gap between them is <code>12 days</code>. The difference is whether you count both end days. We publish the number we calculated ourselves, not the one we were handed. The version that said 13 days was cut, and it's <a href="../checks/illuminate-ftc-order.html#c04" style="border-bottom:1px solid var(--red)">listed with the others</a>.</p>
+  </div>
+
+  <h2>What the order actually requires</h2>
+
+  <p>Here's the part most coverage skips. An FTC settlement isn't a fine and a press release. It's a binding contract, and for the next ten years the specific requirements below have the force of law against this company.<a class="cref" href="../checks/illuminate-ftc-order.html#c25">9</a></p>
+
+  <p>That makes these orders unusually useful reading. The FTC doesn't publish a rule that says "turn off old logins." It sues a company that didn't, and then the settlement spells out exactly what turning them off means, on what deadline, checked by whom. <b>If you want to know what a regulator thinks "reasonable security" means, don't read the guidance. Read the remedy.</b></p>
+
+  <p>Illuminate now has to:</p>
+
+  <ul class="checklist">
+    <li>
+      <b>Cut off access within 30 days when someone's role changes or they leave</b>
+      <span>Not "promptly." Thirty days, in writing, including when employment ends.<a class="cref" href="../checks/illuminate-ftc-order.html#c22">18</a></span>
+    </li>
+    <li>
+      <b>Use multi-factor authentication that can't be phished — and not text messages</b>
+      <span>The order explicitly forbids SMS and phone-call codes for anyone accessing covered data, and requires methods resistant to phishing.<a class="cref" href="../checks/illuminate-ftc-order.html#c21">19</a></span>
+    </li>
+    <li>
+      <b>Encrypt the data both while it's moving and while it's sitting still</b>
+      <span>Databases holding covered information, in transit over external networks and at rest.<a class="cref" href="../checks/illuminate-ftc-order.html#c23">20</a></span>
+    </li>
+    <li>
+      <b>Scan for vulnerabilities every four months, and run a penetration test every year</b>
+      <span>Specific intervals, written into the order.<a class="cref" href="../checks/illuminate-ftc-order.html#c24">21</a></span>
+    </li>
+    <li>
+      <b>Delete data it no longer needs, and publish a retention schedule</b>
+      <span>Within 90 days, on its own website, saying why it keeps what it keeps and for how long.</span>
+    </li>
+    <li>
+      <b>Hire an outside auditor, every two years, for ten years</b>
+      <span>The auditor can't rely on the company's own say-so, and has to hand its files to the FTC on request.</span>
+    </li>
+  </ul>
+
+  <p>Look at that first item next to the timeline again. A key that stayed live for three and a half years after its owner walked out<a class="cref" href="../checks/illuminate-ftc-order.html#c09">5</a> — and the remedy is a 30-day clock. <b>The remedy is a photograph of the failure.</b> That's true of nearly every FTC order, which is why they're worth reading even if you'll never be the defendant.</p>
+
+  <h2>What it means</h2>
+
+  <h3>If you run systems anywhere</h3>
+  <p>The requirements above aren't specific to education software or to companies of a certain size. They're the FTC writing down, in enforceable language, what it currently expects of anyone holding personal data. Old accounts, phishable MFA, unencrypted backups, and scanning intervals are the recurring cast. None of them require a security team. They require someone to spend an afternoon checking.</p>
+
+  <h3>If you write contracts</h3>
+  <p>Illuminate's exposure wasn't only about being breached. The FTC alleged the company had promised school districts it would give notice of a breach within 24 or 48 hours,<a class="cref" href="../checks/illuminate-ftc-order.html#c14">22</a> had an internal policy of 72 hours,<a class="cref" href="../checks/illuminate-ftc-order.html#c13">17</a> and then notified some districts in October 2023.<a class="cref" href="../checks/illuminate-ftc-order.html#c15">16</a> Promises in a contract are enforceable. A commitment nobody has ever practiced is a liability with a signature on it.</p>
+
+  <h3>If you follow regulation</h3>
+  <p>Two details are worth noting. The order names SMS-based MFA as insufficient — a technical position, in a binding legal instrument, that a lot of organizations have not caught up with. And the FTC alleged that Illuminate could have prevented or reduced the harm with "readily available, and relatively low-cost, measures."<a class="cref" href="../checks/illuminate-ftc-order.html#c29">23</a> That phrase does specific work in the agency's unfairness analysis, and it appears in complaint after complaint.</p>
+
+  <h3>If you just want to understand the shape of it</h3>
+  <p>Twenty-three months of warnings. A login left on for three and a half years. Twelve days inside. Twenty-one months to tell everyone. We're not going to characterize that for you, and the software we built won't let us. The dates are all above.</p>
+
+  <!-- WHAT WE CUT -->
+  <div class="cut tc-meta">
+    <div class="t">What we cut</div>
+    <h3>We wrote 34 facts. Seven didn't survive.</h3>
+    <p>Every fact above has a small green number next to it that links to the exact sentence in the FTC's filing where it comes from. Below is what we tried to say and couldn't. This is the part of the report we'd most like you to check.</p>
+    <table>
+      <tr><td>cut</td><td><b>"The intrusion lasted 13 days."</b> The complaint says 13; the two dates it gives work out to 12. We publish our own arithmetic.</td></tr>
+      <tr><td>cut</td><td><b>"Illuminate paid a ransom."</b> The document says the company <em>agreed to pay</em>. It never says the payment happened.</td></tr>
+      <tr><td>cut</td><td><b>"Illuminate never encrypted student data."</b> The document says "until at least January 2022." That's a floor, not a "never."</td></tr>
+      <tr><td>cut</td><td><b>"The breach was self-inflicted."</b> An opinion. Blocked automatically before anyone read it.</td></tr>
+      <tr><td>cut</td><td><b>"The company was negligent, and its failures were egregious."</b> Same. A court says that, not us.</td></tr>
+      <tr><td>cut</td><td><b>"This is the 31st FTC case of its kind since 2013."</b> We couldn't reproduce that count, so we don't get to print it.</td></tr>
+      <tr><td>cut</td><td><b>"Each violation can cost up to $51,744."</b> True — but that sentence is in the FTC's <em>press release</em>, not in the order we cited. Our own search caught the mismatch. <b>This is the one that could have gotten us sued.</b></td></tr>
+    </table>
+    <a href="../checks/illuminate-ftc-order.html">See every fact, quote, and check →</a>
+  </div>
+
+  <div class="sources">
+    <h3>Sources</h3>
+    <ul>
+      <li>
+        FTC, <em>In the Matter of Illuminate Education, Inc.</em> — Complaint, Matter No. 222-3105.
+        <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2223105illuminatecomplaint.pdf">Read the original (PDF)</a>
+        <span class="h">our saved copy, fingerprint: b7a5f1b2f6bdc49174dc2d4052bd2696bc20b04d771cb28064dcd9e6c43c5364</span>
+      </li>
+      <li>
+        FTC, <em>In the Matter of Illuminate Education, Inc.</em> — Decision and Order, Docket C-4833, issued June 5, 2026.
+        <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/2223105c4833illuminatefinalorder.pdf">Read the original (PDF)</a>
+        <span class="h">our saved copy, fingerprint: 3676181528383bcbf8948f9ba3e95515689b4f21c98284576f4a52c11294f18b</span>
+      </li>
+    </ul>
+    <p style="font-size:14.5px;color:var(--ink-3)">The FTC also put out a press release about this case. We read it to find the documents above. We didn't quote it, and nothing in this report rests on it.</p>
+  </div>
+
+  <div class="legal">
+    <b>Everything in "What happened" is an accusation from a government filing.</b> Illuminate Education neither admitted nor denied it. No court has found the company did anything wrong.<br><br>
+    This report is general information, not legal advice.<br><br>
+    <b>Think we got something wrong?</b> Tell us which fact and why. If you're right, we'll correct it on this page and say what changed. We don't edit quietly.
+  </div>
+</article>
+
+<div class="navback">
+  <a href="../index.html">← All reports</a> &nbsp;·&nbsp; <a href="../about.html">About the editor</a> &nbsp;·&nbsp; <a href="../checks/illuminate-ftc-order.html">Check our work →</a>
+</div>
+
+<footer>
+  <div class="foot">
+    <span>© 2026 Unforced Error</span>
+    <span><a href="../about.html">Aiden Goldenberg, Editor</a> · <a href="../house-rules.html">House Rules</a></span>
+    <span>Primary sources only · Not legal advice</span>
+  </div>
+</footer>
+</body>
+</html>

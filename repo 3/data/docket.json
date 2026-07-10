@@ -1,0 +1,169 @@
+{
+  "generated_utc": "2026-07-10T02:40:00Z",
+  "source": "Federal Register API, agency-scoped. Allowlisted hosts only.",
+  "note": "Every quote below was located by exact string match in the agency's own abstract or in the full text of the published document. Nothing is paraphrased. Nothing is summarized. Search-highlight snippets are never used as a source of quotes.",
+  "entries": [
+    {
+      "id": "2026-13998",
+      "date": "2026-07-10",
+      "agency": "FCC",
+      "agency_full": "Federal Communications Commission",
+      "type": "Final Rule",
+      "tag": "911",
+      "title": "Facilitating Implementation of Next Generation 911 Services (NG911); Improving 911 Reliability",
+      "quote": "In this document, the Federal Communications Commission (the FCC or Commission) adopts rules to ensure that emerging Next Generation 911 (NG911) networks are reliable and interoperable.",
+      "why": "FCC final rule. Effective August 10, 2026.",
+      "url": "https://www.federalregister.gov/documents/2026/07/10/2026-13998/facilitating-implementation-of-next-generation-911-services-ng911-improving-911-reliability",
+      "pdf": "https://www.govinfo.gov/content/pkg/FR-2026-07-10/pdf/2026-13998.pdf",
+      "flag": null,
+      "verified": {"against": "agency abstract", "method": "exact string match", "checked_utc": "2026-07-10T02:35:00Z"}
+    },
+    {
+      "id": "2026-13999",
+      "date": "2026-07-10",
+      "agency": "FCC",
+      "agency_full": "Federal Communications Commission",
+      "type": "Proposed Rule",
+      "tag": "911",
+      "title": "Facilitating Implementation of Next Generation 911 Services (NG911); Improving 911 Reliability",
+      "quote": "Specifically, the Further Notice of Proposed Rulemaking proposes requiring NG911 service providers to conduct multi-party interstate interoperability testing of 911 traffic.",
+      "why": "FCC proposed rule. Comments due August 10, 2026; reply comments September 8, 2026.",
+      "url": "https://www.federalregister.gov/documents/2026/07/10/2026-13999/facilitating-implementation-of-next-generation-911-services-ng911-improving-911-reliability",
+      "pdf": "https://www.govinfo.gov/content/pkg/FR-2026-07-10/pdf/2026-13999.pdf",
+      "flag": "watching",
+      "verified": {"against": "agency abstract; comment dates from the document's DATES field", "method": "exact string match", "checked_utc": "2026-07-10T02:36:00Z"}
+    },
+    {
+      "id": "2026-13874",
+      "date": "2026-07-09",
+      "agency": "FCC",
+      "agency_full": "Federal Communications Commission",
+      "type": "Proposed Rule",
+      "tag": "Telecom",
+      "title": "Enhancing Know-Your-Upstream-Provider Requirements and Strengthening STIR/SHAKEN (Call Authentication Trust Anchor; Advanced Methods To Target and Eliminate Unlawful Robocalls)",
+      "quote": "Specifically, the Commission proposes establishing baseline KYUP information-collection, compliance review, verification, monitoring, and responsive-action requirements to ensure providers can identify and cut off bad-actor upstream providers.",
+      "why": "FCC proposed rule. Comments due August 10, 2026; reply comments September 8, 2026.",
+      "url": "https://www.federalregister.gov/documents/2026/07/09/2026-13874/enhancing-know-your-upstream-provider-requirements-and-strengthening-stirshaken-call-authentication",
+      "pdf": "https://www.govinfo.gov/content/pkg/FR-2026-07-09/pdf/2026-13874.pdf",
+      "flag": "watching",
+      "verified": {"against": "agency abstract; comment dates from the document's DATES field", "method": "exact string match", "checked_utc": "2026-07-10T02:37:00Z"}
+    },
+    {
+      "id": "2026-13628",
+      "date": "2026-07-07",
+      "agency": "FTC",
+      "agency_full": "Federal Trade Commission",
+      "type": "Proposed Policy Statement",
+      "tag": "AI",
+      "title": "Policy Statement Concerning the Suppression of Accuracy in Artificial Intelligence Systems",
+      "quote": "These prohibitions apply even when a company engages in a deceptive act or practice in order to comply with a State law.",
+      "why": "FTC proposed policy statement on AI marketing claims under section 5. Comments due July 31, 2026.",
+      "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems",
+      "pdf": "https://www.govinfo.gov/content/pkg/FR-2026-07-07/pdf/2026-13628.pdf",
+      "flag": "watching",
+      "verified": {"against": "full document text, Section IV", "method": "exact string match", "checked_utc": "2026-07-10T02:34:00Z"}
+    },
+    {
+      "id": "2026-07651",
+      "date": "2026-04-20",
+      "agency": "SEC",
+      "agency_full": "Securities and Exchange Commission",
+      "type": "Concept Release",
+      "tag": "Markets",
+      "title": "Concept Release on Consolidated Audit Trail and Other Audit Trails and Data Sources",
+      "quote": "These developments have prompted the Commission to consider whether changes should be made to the rules and regulations governing existing audit trails and related data sources to better respond to and reflect current market conditions; demonstrated regulatory needs; civil liberty, privacy, and confidentiality concerns; cost-efficient technology solutions; and cybersecurity considerations.",
+      "why": "SEC concept release. Seeking comment before any rule is proposed.",
+      "url": "https://www.federalregister.gov/documents/2026/04/20/2026-07651/concept-release-on-consolidated-audit-trail-and-other-audit-trails-and-data-sources",
+      "pdf": "https://www.govinfo.gov/content/pkg/FR-2026-04-20/pdf/2026-07651.pdf",
+      "flag": "watching",
+      "verified": {"against": "agency abstract", "method": "exact string match", "checked_utc": "2026-07-10T02:38:00Z", "note": "Quote replaced. The earlier version of this entry quoted the API's search-highlight snippet rather than the agency's own abstract."}
+    }
+  ],
+  "held": [
+    {
+      "title": "OpenPLC v3",
+      "id": "ICSA-26-190-01",
+      "agency": "CISA",
+      "reason": "cisa.gov returned an empty response on three separate requests (advisory page, ICS advisory index, and all.xml feed). The quote could not be verified against the source. Held, not published."
+    },
+    {
+      "title": "Schneider Electric PowerChute Serial Shutdown",
+      "id": "ICSA-26-190-02",
+      "agency": "CISA",
+      "reason": "Same source outage. Quote unverifiable. Held, not published."
+    },
+    {
+      "title": "Schneider Electric Easergy MiCOM Px40 Series",
+      "id": "ICSA-26-190-03",
+      "agency": "CISA",
+      "reason": "Same source outage. Quote unverifiable. Held, not published."
+    }
+  ],
+  "screened_out": [
+    {
+      "title": "Agency Information Collection Activities; Extension: Rule 17Ab2-1 and Form CA-1",
+      "agency": "SEC",
+      "reason": "Paperwork Reduction Act clearance notice. Published here in error on July 9 and removed. The quote came from the API's search-highlight field, not the agency's abstract."
+    },
+    {
+      "title": "Review of Submarine Cable Landing License Rules and Procedures To Assess Evolving National Security, Law Enforcement, Foreign Policy, and Trade Policy Risks",
+      "agency": "FCC",
+      "reason": "Reads like a new cybersecurity certification requirement. It is a Paperwork Reduction Act notice announcing that OMB approved information collections adopted last year in FCC 25-49. No new obligation. Published here in error on July 9 and removed."
+    },
+    {
+      "title": "Aurobindo and Lannett; Analysis of Proposed Agreement Containing Consent Orders To Aid Public Comment",
+      "agency": "FTC",
+      "reason": "A consent order, but an antitrust one. No data, security, privacy, or technology nexus. Published here in error on July 9 and removed."
+    },
+    {
+      "title": "Counter-UAS Authority for State, Local, Tribal, and Territorial Law Enforcement and Correctional Agencies",
+      "agency": "DOJ / DHS",
+      "reason": "Interesting rule, but its only connection to this beat is the phrase \"privacy protections\" inside a list of governed topics. No security or data obligation. Published here in error on July 9 and removed."
+    },
+    {
+      "title": "Medical Devices; Classification of the SARS-CoV-2 Serology Test",
+      "agency": "FDA",
+      "reason": "Matched the keyword \"cybersecurity\" only inside boilerplate device-validation language."
+    },
+    {
+      "title": "Rescinding Portions of DHS Title VI Regulations",
+      "agency": "DHS",
+      "reason": "Matched on a footnote citing an old CISA grant solicitation. Unrelated rule."
+    },
+    {
+      "title": "Fee Schedules; Fee Recovery for Fiscal Year 2026",
+      "agency": "NRC",
+      "reason": "Matched on a single line item in a budget table. No regulatory content."
+    },
+    {
+      "title": "Eleven Self-Regulatory Organization rule filings (Nasdaq PHLX, LTSE, MIAX, Cboe BZX, LCH SA, FICC, MX2, and others)",
+      "agency": "SEC",
+      "reason": "Routine exchange and clearing-agency rule filings. No technology or security content."
+    },
+    {
+      "title": "SEC v. Weiguo Zhai, Litigation Release No. 26581",
+      "agency": "SEC",
+      "reason": "Settled insider trading action arising from a pharmaceutical tender offer. No technology, data, or security nexus."
+    },
+    {
+      "title": "Coast Guard safety zones, FEMA flood hazard determinations, and PRA clearance notices",
+      "agency": "DHS",
+      "reason": "Routine agency business unrelated to this beat."
+    },
+    {
+      "title": "FBI CJIS user fee correction; DEA registration decisions; controlled substance scheduling; CERCLA consent decree; Tennessee capital counsel certification",
+      "agency": "DOJ",
+      "reason": "Routine agency business unrelated to this beat."
+    },
+    {
+      "title": "Advancement of the Low Power Television, TV Translator and Class A Television Service",
+      "agency": "FCC",
+      "reason": "Broadcast licensing rule with no security or data obligation."
+    }
+  ],
+  "quiet_sources": [
+    {"agency": "NIST", "note": "No Federal Register documents in the polling window. Newest is dated June 5, 2026."},
+    {"agency": "CISA", "note": "Source unreachable. Three advisories held rather than published. See above."}
+  ],
+  "archive": []
+}

@@ -1,0 +1,48 @@
+{
+  "corpus_version": "0.1",
+  "generated_utc": "2026-07-10T00:36:19Z",
+  "normalization": {
+    "description": "PDF text layer extracted via HTTP fetch, then whitespace-normalized: PDF hard-wrap linebreaks within a paragraph collapsed to single spaces; page-number artifacts and running headers removed; typographic quotes and dashes normalized to ASCII. Paragraph boundaries and numbering preserved verbatim.",
+    "reversible": false,
+    "known_limitation": "The snapshot is a normalized TEXT EXTRACTION, not the original PDF bytes. Offsets bind to this snapshot, not to the PDF. A future RESOLVER must store the raw PDF bytes and hash those. Any claim citing an offset here is bound to a derivative artifact. This is disclosed rather than hidden."
+  },
+  "documents": [
+    {
+      "doc_id": "ftc-2223105-complaint",
+      "title": "In the Matter of Illuminate Education, Inc. — Complaint",
+      "issuer": "United States Federal Trade Commission",
+      "matter_number": "222-3105",
+      "docket": "C-4833",
+      "tier": "primary",
+      "primary_source_class": "agency enforcement action / administrative complaint",
+      "source_url": "https://www.ftc.gov/system/files/ftc_gov/pdf/2223105illuminatecomplaint.pdf",
+      "fetched_utc": "2026-07-10T00:33:00Z",
+      "snapshot_path": "corpus/ftc-2223105-complaint.txt",
+      "snapshot_bytes": 27117,
+      "sha256": "b7a5f1b2f6bdc49174dc2d4052bd2696bc20b04d771cb28064dcd9e6c43c5364",
+      "legal_status_note": "An FTC administrative complaint states allegations the Commission has 'reason to believe' are true. The Consent Agreement records that Respondent neither admits nor denies the allegations. Every claim sourced to this document must be attributed as an FTC allegation, never as established fact."
+    },
+    {
+      "doc_id": "ftc-2223105-final-order",
+      "title": "In the Matter of Illuminate Education, Inc. — Decision and Order",
+      "issuer": "United States Federal Trade Commission",
+      "matter_number": "222-3105",
+      "docket": "C-4833",
+      "tier": "primary",
+      "primary_source_class": "final consent order",
+      "source_url": "https://www.ftc.gov/system/files/ftc_gov/pdf/2223105c4833illuminatefinalorder.pdf",
+      "fetched_utc": "2026-07-10T00:33:00Z",
+      "snapshot_path": "corpus/ftc-2223105-final-order.txt",
+      "snapshot_bytes": 37787,
+      "sha256": "3676181528383bcbf8948f9ba3e95515689b4f21c98284576f4a52c11294f18b",
+      "legal_status_note": "Issued June 5, 2026. Binding on Respondent. Order obligations are established fact; the complaint's factual allegations remain allegations."
+    }
+  ],
+  "excluded_secondary_leads": [
+    {
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2025/12/ftc-takes-action-against-education-technology-provider-failing-secure-students-personal-data",
+      "role": "lead",
+      "reason": "FTC press release. Agency communication summarizing the action. Used to locate the primary documents. NOT citable. No claim in this brief binds to it."
+    }
+  ]
+}
