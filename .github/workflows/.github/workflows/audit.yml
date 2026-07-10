@@ -1,1 +1,39 @@
 .github/workflows/audit.yml
+name: The Gate
+
+# Runs on every push and every pull request. A failing audit blocks the merge.
+# Netlify independently runs the same audit as its build command and refuses to
+# publish on failure. Two enforcement points, one script. Neither can be skipped
+# by editing HTML in a browser.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  audit:
+    name: Re-verify every published claim
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Corpus integrity + span binding + Type C ban + arithmetic
+        run: |
+          python3 press.py
+          python3 audit.py
+
+      - name: Fail if press.py changed the receipts page
+        run: |
+          if ! git diff --quiet -- site/checks/; then
+            echo "::error::The receipts page in the repo does not match what press.py"
+            echo "::error::generates from the claims ledger. Someone hand-edited a receipt."
+            echo "::error::The receipts page is a rendering of the ledger, not a document."
+            git diff -- site/checks/
+            exit 1
+          fi
